@@ -213,15 +213,25 @@ p {
 }
 
 /*Наші переваги*/
-.advantages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+@media (min-width: 768px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
 }
-.advantages__title {
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
+@media (min-width: 768px) {
+  .advantages__title {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .advantages__title {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .advantages__icon {
   width: 270px;
@@ -258,6 +268,11 @@ p {
 /*Чим ми займаэмось*/
 .cards {
   padding-top: 0;
+}
+@media (max-width: 1200px) {
+  .cards {
+    display: none;
+  }
 }
 .cards__cards {
   display: -webkit-box;

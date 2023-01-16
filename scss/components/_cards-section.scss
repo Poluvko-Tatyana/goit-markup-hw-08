@@ -3,6 +3,10 @@
 .cards{
     padding-top: 0;
 
+    @media (max-width: 1200px) {
+        display: none;
+    }
+
     
 &__cards{
     display: flex;
