@@ -1,0 +1,30 @@
+/*Секція герой*/
+.hero{
+    padding: 200px 15px;
+    background-color: var(--color-footer);
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/backround.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1600px;
+    background-size: cover;
+    margin: 0 auto;
+
+    &__title{
+        color:var(--color-white);
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+        margin: 0 auto 30px auto;
+    }
+    
+    &__button{
+        margin: 0 auto;
+        padding: 10px 24px;
+    }
+    
+}
+
