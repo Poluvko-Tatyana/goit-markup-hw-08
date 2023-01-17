@@ -15,7 +15,6 @@
         }
     }
     &__icon{
-        width: 270px;
         height: 120px;
         background-color: var(--color-backround);
         display: flex;
@@ -23,6 +22,10 @@
         align-items: center;
         border-radius: 4px;
         margin-bottom: 30px;
+        
+        @media (min-width: 768px){
+            width: 270px;
+        }
     }
     &__heading{
         color: var(--color-title);

@@ -1,8 +1,15 @@
 /*Постійні клієнти*/
 .customers{
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
 
+    @media (min-width:767px) {
+        gap: 30px;
+    }
+    &__card{
+    @media (max-width:1199px) {
+        margin: 15px;}
+    }
     &__list{
         width: 170px;
         height: 92px;

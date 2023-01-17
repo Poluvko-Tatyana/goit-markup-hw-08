@@ -52,10 +52,6 @@
         transition-property: color, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-        @media (min-width: 768px) and (max-width: 1199px) {
-            margin-bottom: 10px;
-        }
     }
     
     &__text:hover,
@@ -67,24 +63,45 @@
     &__conteiner{
         display: flex;
         align-items: center;
-        padding: 10px 0 10px 0;
+        padding: 24px 0 25px 0;
 
-        @media (min-width: 768px) {
-            padding: 24px 0 25px 0;
+        @media screen and (max-width: 767px) {
+            padding: 16px 0;
         }
     }
     
     &__nav{
         display: flex;
         align-items: center;
+        flex-grow: 1;
+    }
+    
+    &__address{
+        display: none;
+        
+
+        @media (min-width: 767px) {
+        display: flex;
+        gap: 30px;
+        margin-left: 308px;
+        align-items: center;}
+    }
+    
+    &__menu{
+        display: none;
+
+        @media (min-width: 767px) {
+            display: flex;
+            gap: 50px;
+            margin-left: 93px;
+        }
+        
     }
 
     &__burger{
-        display: flex;
-        align-items: center;
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 15px;
+        top: 10px;
         border: none;
         background-color: var(--color-white);
         fill: var(--color-title);
@@ -92,37 +109,14 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        @media (min-width: 768px) {
+        @media (min-width: 767px) {
             display: none;
+            
         }
     }
 
     &__burger:hover,
     &__burger:focus{
     fill: var(--color-button-nav);}
-
-    &__address{
-        display: none;
-
-        @media (min-width: 768px) {
-        display: flex;
-        gap: 30px;
-        margin-left: 308px;
-        align-items: center;}
-
-        @media (min-width: 768px) and (max-width: 1199px) {
-            display: block;
-            margin-left: 96px;
-        }
-    }
-    
-    &__menu{
-        display: none;
-
-        @media (min-width: 768px) {
-        display: flex;
-        gap: 50px;
-        margin-left: 93px;}
-    }
 }
 
