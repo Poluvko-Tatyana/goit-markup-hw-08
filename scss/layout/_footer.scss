@@ -175,6 +175,9 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         margin: 0 auto 20px auto;
 
+        @media (max-width:480px) {
+            width: 258px;
+        }
         @media (min-width:1200px) {
             justify-content:flex-start;
         }
