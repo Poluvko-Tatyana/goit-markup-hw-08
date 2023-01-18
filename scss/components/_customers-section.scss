@@ -3,15 +3,16 @@
     display: flex;
     flex-wrap: wrap;
 
-    @media (min-width:767px) {
+    @media (min-width:768px) {
         gap: 30px;
     }
     &__card{
-    @media (max-width:1199px) {
+    @media (max-width:767px) {
         margin: 15px;}
+        
     }
     &__list{
-        width: 170px;
+        width: 195px;
         height: 92px;
         border: 1px solid var(--color-icon);
         border-radius: 4px;
@@ -22,6 +23,13 @@
         transition-property:border, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media (min-width:768px) {
+            width: 226px;
+        }
+        @media (min-width:1200px) {
+            width: 170px;
+        }
     }
     &__list:hover,
     &__list:focus{

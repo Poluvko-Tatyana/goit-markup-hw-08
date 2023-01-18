@@ -52,6 +52,10 @@
         transition-property: color, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width: 767px) {
+            margin-bottom: 10px;
+        }
     }
     
     &__text:hover,
@@ -79,8 +83,12 @@
     &__address{
         display: none;
         
-
         @media (min-width: 767px) {
+            display: block;
+            margin-left: 56px;
+            align-items: center;
+        }
+        @media (min-width: 1200px) {
         display: flex;
         gap: 30px;
         margin-left: 308px;
@@ -93,6 +101,9 @@
         @media (min-width: 767px) {
             display: flex;
             gap: 50px;
+            margin-left: 88px;
+        }
+        @media (min-width: 1200px) {
             margin-left: 93px;
         }
         

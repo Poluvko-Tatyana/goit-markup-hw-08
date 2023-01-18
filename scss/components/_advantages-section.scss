@@ -1,20 +1,21 @@
 /*Наші переваги*/
 .advantages{
-    @media (min-width: 768px) {
-        display: flex;
-        gap: 30px;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
    
     &__title{
-        @media (min-width: 768px){
-            flex-basis: calc((100% - 30px) / 2);
+        @media (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
         }
-    
-        @media (min-width: 1200px){
+
+        @media (min-width: 1200px) {
             flex-basis: calc((100% - 90px) / 4);
         }
     }
     &__icon{
+        width: 100%;
         height: 120px;
         background-color: var(--color-backround);
         display: flex;
@@ -23,7 +24,7 @@
         border-radius: 4px;
         margin-bottom: 30px;
         
-        @media (min-width: 768px){
+        @media (min-width: 1200px){
             width: 270px;
         }
     }

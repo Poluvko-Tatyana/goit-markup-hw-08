@@ -27,6 +27,10 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px;
 
+    @media (max-width: 767px) {
+        max-width: 450px;
+    }
+
     &-button{
         position: absolute;
         right: 8px;

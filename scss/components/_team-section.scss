@@ -12,20 +12,32 @@
     }
 
     &__card{
-        @media (max-width:1199px) {
-        margin: 15px;
-        width: 100%;
-        height: auto;
-        }
-
         background-color:var(--color-white);
         list-style: none; 
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
+
+        @media (max-width:767px) {
+        margin: 15px 0;
+        width: 100%;
+        height: auto;
+        
+        }
+
+        @media (min-width: 768px) {
+            width: 270px;
+            flex-basis: calc((100% - 30px) / 2);
+            }
+    
+        @media (min-width: 1200px) {
+            flex-basis: calc((100% - 90px) / 4);
+            }
     }
+    
     &__title{
         padding: 30px 0;
     }
+
     &__name{
         color: var(--color-title);
         font-weight: 500;
