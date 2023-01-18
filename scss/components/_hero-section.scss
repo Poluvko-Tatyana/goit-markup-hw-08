@@ -9,6 +9,12 @@
     background-size: cover;
     margin: 0 auto;
 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx) {
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/backround.jpg);
+        
+    }
+
     &__title{
         color:var(--color-white);
         text-align: center;

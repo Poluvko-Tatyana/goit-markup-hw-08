@@ -2,6 +2,8 @@
     position: fixed;
     top: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
     width: 480px;
     height: 100%;
     padding: 48px 25px;
@@ -33,14 +35,14 @@
     fill: var(--color-button-nav);
      }
 
-   
+    &__menu{
+        margin-bottom: auto;
+    }
 
     &__margin-link{
         margin-bottom: 32px;
     }
-    &__margin-link-last{
-        margin-bottom: 306px;
-    }
+    
 
     &__link{
         color: var(--color-title);
