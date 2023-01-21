@@ -21,6 +21,9 @@
     position: absolute;
     right: 15px;
     top:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     background-color: var(--color-white);
     width: 40px;
@@ -34,12 +37,14 @@
     &__close:hover{
     fill: var(--color-button-nav);
      }
-
+    &__menu{
+        margin-bottom: auto;
+}
     &__margin-link{
         margin-bottom: 32px;
     }
     &__margin-link-last{
-        margin-bottom: 309px;
+        margin-bottom: 0;
     }
 
     &__link{
@@ -80,34 +85,31 @@
     }
     &__phone{
         margin-bottom: 32px;
+        font-size: 34px;
+        line-height: 1.17;
+    }
+    &__email{
         font-size: 24px;
         line-height: 1.16;
     }
-    &__email{
-        margin-bottom: 64px;
-        font-size: 34px;
-        line-height: 1.17;
 
-        @media (max-width: 479px) {
-            font-size: 24px;
-        }
-    }
     &__socials-box{
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         gap: 10px;
-
-        @media (max-width: 479px) {
-            gap: 2px;
-        }
     }
     &__socials{
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        position: relative;
         padding-right: 10px;
-        color: var(--color-button-nav);
     }
-    &__socials-last{
-        border-right:none;
+    &__socials::after{
+            content:'';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 1px;
+            height: 100%;
+            background-color: rgba(33, 33, 33, 0.2);
     }
-    
 }
