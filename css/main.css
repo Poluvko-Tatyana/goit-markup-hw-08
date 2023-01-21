@@ -999,7 +999,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 22px;
+  margin-bottom: 12px;
 }
 @media (min-width: 1200px) {
   .footer__address {
