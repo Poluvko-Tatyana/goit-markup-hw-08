@@ -62,7 +62,9 @@
     &__link:focus {
         color: var(--color-button-nav);
     }
-   
+    &__link--current{
+        color: var(--color-button-nav);
+    }
     &__address{
         margin-bottom: 64px;
     }
@@ -103,6 +105,7 @@
         position: relative;
         padding-right: 10px;
     }
+
     &__socials::after{
             content:'';
             position: absolute;
